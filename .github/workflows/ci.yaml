@@ -34,13 +34,13 @@ jobs:
           for file in ${ALL_CHANGED_FILES}; do
             if [[ $file =~ "/ValueSet/"  ]]; then
               echo "post  $file as valueSet"
-              curl -X POST -H "Content-Type: application/json" -H "X-API-KEY: ${{ secrets.API_KEY }}" --data @$file https://node-express-tracer.onrender.com/
+              curl -X POST -H "Content-Type: application/json" -H "X-API-KEY: ${{ secrets.API_KEY }}" --data @$file http://localhost:8080/fhir/ValueSet
             elif [[ $file =~ "/CodeSystem/"  ]]; then
               echo "post $file as codeSystem"
-              curl -X POST -H "Content-Type: application/json" -H "X-API-KEY: ${{ secrets.API_KEY }}" --data @$file https://node-express-tracer.onrender.com/
+              curl -X POST -H "Content-Type: application/json" -H "X-API-KEY: ${{ secrets.API_KEY }}" --data @$file http://localhost:8080/fhir/CodeSystem
             elif [[ $file =~ "/ConceptMap/"  ]]; then
               echo "post $file as conceptMap"
-              curl -X POST -H "Content-Type: application/json" -H "X-API-KEY: ${{ secrets.API_KEY }}" --data @$file https://node-express-tracer.onrender.com/
+              curl -X POST -H "Content-Type: application/json" -H "X-API-KEY: ${{ secrets.API_KEY }}" --data @$file http://localhost:8080/fhir/ConceptMap
             else
               echo "skip $file"
             fi
