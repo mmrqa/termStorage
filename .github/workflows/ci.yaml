@@ -1,0 +1,47 @@
+name: CI
+run-name: ${{github.actor}} get files changed on main
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  changed_files:
+
+    runs-on: ubuntu-latest  # windows-latest || macos-latest
+    name: Test changed-files
+    permissions:
+      pull-requests: read
+
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # OR "2" -> To retrieve the preceding commit.
+          
+      - name: Get changed files
+        id: changed-files
+        uses: tj-actions/changed-files@24d32ffd492484c1d75e0c0b894501ddb9d30d62 # v47
+
+      - name: echo user
+        id: echo-user
+        run: echo ${{ github.actor }} ${{github.actor_id}}
+
+      - name: Store changed files
+        env:
+          ALL_CHANGED_FILES: ${{ steps.changed-files.outputs.all_changed_files }}
+        run: |
+          for file in ${ALL_CHANGED_FILES}; do
+            if [[ $file =~ "/ValueSet/"  ]]; then
+              echo "post  $file as valueSet"
+              curl -X POST -H "Content-Type: application/json" -H "X-API-KEY: ${{ secrets.API_KEY }}" --data @$file https://node-express-tracer.onrender.com/
+            elif [[ $file =~ "/CodeSystem/"  ]]; then
+              echo "post $file as codeSystem"
+              curl -X POST -H "Content-Type: application/json" -H "X-API-KEY: ${{ secrets.API_KEY }}" --data @$file https://node-express-tracer.onrender.com/
+            elif [[ $file =~ "/ConceptMap/"  ]]; then
+              echo "post $file as conceptMap"
+              curl -X POST -H "Content-Type: application/json" -H "X-API-KEY: ${{ secrets.API_KEY }}" --data @$file https://node-express-tracer.onrender.com/
+            else
+              echo "skip $file"
+            fi
+          done

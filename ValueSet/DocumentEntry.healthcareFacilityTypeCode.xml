@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+   <id
+           
+            value="DocumentEntry.healthcareFacilityTypeCode"/>
+   <meta>
+      <lastUpdated value="2025-12-01T15:44:33Z"/>
+      <source value="https://art-decor.org/fhir/4.0/ch-epr-"/>
+      <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+      <!--<profile value="http://hl7.org/fhir/4.0/StructureDefinition/ValueSet"/>-->
+   </meta>
+   <extension url="http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod">
+      <valuePeriod>
+         <start value="2024-10-02T17:55:16+01:00"/>
+      </valuePeriod>
+   </extension>
+   <url
+            
+             value="http://fhir.ch/ig/ch-term/ValueSet/DocumentEntry.healthcareFacilityTypeCode"/>
+   <identifier>
+      <use value="official"/>
+      <system value="urn:ietf:rfc:3986"/>
+      <value value="urn:oid:2.16.756.5.30.1.127.3.10.1.11"/>
+   </identifier>
+   <version value="2024-10-02T17:55:16"/>
+   <name
+             
+              value="DocumentEntryHealthcareFacilityTypeCode"/>
+   <title
+              
+               value="DocumentEntry.healthcareFacilityTypeCode"/>
+   <status value="active"/>
+   <experimental value="false"/>
+   <date value="2025-12-01T15:44:33+01:00"/>
+   <publisher value="eHealth Suisse"/>
+   <contact>
+      <name value="eHealth Suisse"/>
+      <telecom>
+         <system value="url"/>
+         <value value="www.e-health-suisse.ch"/>
+      </telecom>
+   </contact>
+   <description value="Type of healthcare facility as per Annex 3; EPRO-FDHA.       This code describes the type of healthcare facility in which the document was compiled during the treatment process. In conjunction with the authorisation control, the patient can use this information to assign all documents from a specific type of healthcare facility to a specific confidentiality level in their rights and attributes, for example."/>
+   <immutable value="false"/>
+   <copyright value="This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org."/>
+   <compose>
+      <include>
+         <system
+                     
+                      value="http://snomed.info/sct"/>
+<!-- need to manually remove         <version
+                      
+                       value="http://snomed.info/sct/2011000195101"/> -->
+         <concept>
+            <code value="722171005"/>
+            <display value="Diagnostic institution (environment)"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="Diagnostische Einrichtung"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="institut diagnostic"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="istituto diagnostica"/>
+            </designation>
+            <designation>
+               <language value="en-US"/>
+               <value value="Diagnostic institution"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="instituziun diagnostica"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="225728007"/>
+            <display value="Accident and Emergency department (environment)"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="Notfall- und Rettungsdienste"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="service d'urgence et de sauvetage"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="servizio di pronto soccorso e di salvataggio"/>
+            </designation>
+            <designation>
+               <language value="en-US"/>
+               <value value="Accident and Emergency department"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="servetsch d'urgenza e da salvament"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="394747008"/>
+            <display value="Health Authority (qualifier value)"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="Gesundheitsbehörde"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="autorité sanitaire"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="autorità sanitaria"/>
+            </designation>
+            <designation>
+               <language value="en-US"/>
+               <value value="Health Authority"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="autoritad da sanadad"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="66280005"/>
+            <display value="Private home-based care (environment)"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="Organisation für Pflege zu Hause"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="soins à domicile"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="servizio di assistenza e cura a domicilio"/>
+            </designation>
+            <designation>
+               <language value="en-US"/>
+               <value value="Private home-based care"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="organisaziun per la tgira a chasa"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="22232009"/>
+            <display value="Hospital (environment)"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="Spital"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="hôpital"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="ospedale"/>
+            </designation>
+            <designation>
+               <language value="en-US"/>
+               <value value="Hospital"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="ospital"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="722172003"/>
+            <display value="Military health institution (environment)"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="Armeeärztliche Dienste"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="service sanitaire de l'armée"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="servizio di medicina militare"/>
+            </designation>
+            <designation>
+               <language value="en-US"/>
+               <value value="Military health institution"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="servetsch da medischina militara"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="722173008"/>
+            <display value="Prison based care site (environment)"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="Gesundheitseinrichtung in der Haftanstalt"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="service de santé en milieu carcéral"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="struttura sanitaria in uno stabilimento carcerario"/>
+            </designation>
+            <designation>
+               <language value="en-US"/>
+               <value value="Prison based care site"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="structura da sanadad en in stabiliment giudizial"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="42665001"/>
+            <display value="Nursing home (environment)"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="Pflegeheim"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="etablissement médico-social"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="casa di cura"/>
+            </designation>
+            <designation>
+               <language value="en-US"/>
+               <value value="Nursing home"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="chasa da tgira"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="264372000"/>
+            <display value="Pharmacy (environment)"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="Apotheke"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="pharmacie"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="farmacia"/>
+            </designation>
+            <designation>
+               <language value="en-US"/>
+               <value value="Pharmacy"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="apoteca"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="35971002"/>
+            <display value="Ambulatory care site (environment)"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="Ambulante Einrichtung"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="etablissement ambulatoire"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="struttura ambulatoriale"/>
+            </designation>
+            <designation>
+               <language value="en-US"/>
+               <value value="Ambulatory care site"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="instituziun ambulanta"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="80522000"/>
+            <display value="Rehabilitation hospital (environment)"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="Organisation für stationäre Rehabilitation"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="réadaptation stationnaire"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="istituto di riabilitazione stazionaria"/>
+            </designation>
+            <designation>
+               <language value="en-US"/>
+               <value value="Rehabilitation hospital"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="institut da reabilitaziun staziunara"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="394778007"/>
+            <display value="Client's or patient's home (environment)"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="Domizil des Patienten"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="domicile du patient"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="domicilio del paziente"/>
+            </designation>
+            <designation>
+               <language value="en-US"/>
+               <value value="Client's or patient's home"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="domicil dal pazient"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="288565001"/>
+            <display value="Medical center (environment)"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="Medizinisches Zentrum"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="centre médical"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="centro medico"/>
+            </designation>
+            <designation>
+               <language value="en-US"/>
+               <value value="Medical center"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="center medicinal"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="264358009"/>
+            <display value="General practice premises (environment)"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="General practice premises"/>
+            </designation>
+            <designation>
+               <language value="de-CH"/>
+               <value value="Arztpraxis"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="cabinet médical"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="studio medico"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="pratica da medi"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="43741000"/>
+            <display value="Site of care (environment)"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="Andere Gesundheitsorganisation"/>
+            </designation>
+            <designation>
+               <language value="de-CH"/>
+               <value value="Behandlungsort"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="autres prestataires de soins"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="lieu de traitement"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="altre organizzazioni sanitarie"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="luogo di trattamento"/>
+            </designation>
+            <designation>
+               <language value="en-US"/>
+               <value value="Other site of care"/>
+            </designation>
+            <designation>
+               <language value="en-US"/>
+               <value value="Site of care"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="autras organisaziuns dals fatgs da tgira"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="91154008"/>
+            <display value="Free-standing birthing center (environment)"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Birthing center"/>
+            </designation>
+            <designation>
+               <language value="de-CH"/>
+               <value value="Geburtshaus"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="maison de naissance"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="casa di nascita"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="chasa da parturir"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="22201008"/>
+            <display value="Free-standing dental clinic (environment)"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Dental practice"/>
+            </designation>
+            <designation>
+               <language value="de-CH"/>
+               <value value="Zahnarztpraxis"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="cabinet dentaire"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="studio dentistico"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="pratica da dentist"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="1332138002"/>
+            <display value="Telemedicine center (environment)"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Telemedicine center"/>
+            </designation>
+            <designation>
+               <language value="de-CH"/>
+               <value value="Telemedizinische Einrichtung"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="institut de télémédecine"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="centro di telemedicina"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="instituziun da telemedischina"/>
+            </designation>
+         </concept>
+      </include>
+   </compose>
+</ValueSet>

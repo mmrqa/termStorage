@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+   <id
+           
+            value="DocumentEntry.classCode"/>
+   <meta>
+      <source value="https://art-decor.org/fhir/ValueSet/2.16.756.5.30.1.127.3.10.1.3--20220625190312"/>
+      <lastUpdated value="2023-05-31T20:59:31Z"/>
+      <source value="https://art-decor.org/fhir/4.0/ch-epr-"/>
+      <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+      <!--<profile value="http://hl7.org/fhir/4.0/StructureDefinition/ValueSet"/>-->
+   </meta>
+   <extension url="http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod">
+      <valuePeriod>
+         <start value="2022-06-25T19:03:12+01:00"/>
+      </valuePeriod>
+   </extension>
+   <url
+            
+             value="http://fhir.ch/ig/ch-term/ValueSet/DocumentEntry.classCode"/>
+   <identifier>
+      <use value="official"/>
+      <system value="urn:ietf:rfc:3986"/>
+      <value value="urn:oid:2.16.756.5.30.1.127.3.10.1.3"/>
+   </identifier>
+   <version value="2022-06-25T19:03:12"/>
+   <name
+             
+              value="DocumentEntryClassCode"/>
+   <title
+              
+               value="DocumentEntry.classCode"/>
+   <status value="active"/>
+   <experimental value="false"/>
+   <publisher value="eHealth Suisse"/>
+   <contact>
+      <name value="eHealth Suisse"/>
+      <telecom>
+         <system value="url"/>
+         <value value="www.e-health-suisse.ch"/>
+      </telecom>
+   </contact>
+   <description value="Document class as per EPRO-FDHA Annex 3"/>
+   <immutable value="false"/>
+   <copyright value="This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org.This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org."/>
+   <compose>
+      <include>
+         <system
+                     
+                      value="http://snomed.info/sct"/>
+         <version
+                      
+                       value="http://snomed.info/sct/2011000195101"/>
+         <concept>
+            <code value="2171000195109"/>
+            <display value="Obstetrical record (record artifact)"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="Geburtsbericht"/>
+            </designation>
+            <designation>
+               <language value="de-CH"/>
+               <value value="Schwangerschaftsbericht"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="rapport de naissance"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="rapport de grossesse"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="rapporto del parto"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="rapporto di gravidanza"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="rapport da gravidanza"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="rapport da naschientscha"/>
+            </designation>
+            <designation>
+               <language value="en-US"/>
+               <value value="Pregnancy report"/>
+            </designation>
+            <designation>
+               <language value="en-US"/>
+               <value value="Birth report"/>
+            </designation>
+         </concept>
+      </include>
+      <include>
+         <system
+                     
+                      value="http://snomed.info/sct"/>
+<!--         <version
+                      
+                       value="http://snomed.info/sct/2011000195101"/> -->
+         <concept>
+            <code value="371531000"/>
+            <display value="Report of clinical encounter (record artifact)"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="Konsultationsbericht"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="rapport de consultation"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="rapporto di visita medica"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="rapport da consultaziun"/>
+            </designation>
+            <designation>
+               <language value="en-US"/>
+               <value value="Report of clinical encounter"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="721927009"/>
+            <display value="Referral note (record artifact)"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="Zuweisungsschreiben"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="lettre de référence"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="lettera d'invio"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="brev d'assegnaziun"/>
+            </designation>
+            <designation>
+               <language value="en-US"/>
+               <value value="Referral note"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="721963009"/>
+            <display value="Order (record artifact)"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="Untersuchungsauftrag"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="demande d'examen"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="richiesta di esami"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="incumbensa da consultaziun"/>
+            </designation>
+            <designation>
+               <language value="en-US"/>
+               <value value="Order"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="422735006"/>
+            <display value="Summary clinical document (record artifact)"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="Zusammenfassung"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="résumé"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="riepilogo"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="rapport resumà"/>
+            </designation>
+            <designation>
+               <language value="en-US"/>
+               <value value="Summary"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="371525003"/>
+            <display value="Clinical procedure report (record artifact)"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="Interventionsbericht"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="rapport d'intervention"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="rapporto operatorio"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="rapport d'intervenziun"/>
+            </designation>
+            <designation>
+               <language value="en-US"/>
+               <value value="Procedure report"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="734163000"/>
+            <display value="Care plan (record artifact)"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="Behandlungsplan"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="plans de soins"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="piano di cura"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="plan da tractament"/>
+            </designation>
+            <designation>
+               <language value="en-US"/>
+               <value value="Care plan"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="440545006"/>
+            <display value="Prescription record (record artifact)"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="Verschreibung"/>
+            </designation>
+            <designation>
+               <language value="de-CH"/>
+               <value value="Rezept"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="prescription"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="ordonnance"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="prescrizione medica"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="prescripziun"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="recept"/>
+            </designation>
+            <designation>
+               <language value="en-US"/>
+               <value value="Prescription"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="184216000"/>
+            <display value="Patient record type (record artifact)"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="Patientendokumentation"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="documentation du patient"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="documentazione del paziente"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="documentaziun da lunga durada"/>
+            </designation>
+            <designation>
+               <language value="en-US"/>
+               <value value="Patient documentation"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="371537001"/>
+            <display value="Consent report (record artifact)"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="Einverständniserklärung"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="consentement"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="consenso"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="consentiment"/>
+            </designation>
+            <designation>
+               <language value="en-US"/>
+               <value value="Consent"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="371538006"/>
+            <display value="Advance directive report (record artifact)"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="Patientenverfügung"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="directives anticipées"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="direttive anticipate"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="disposiziun dal pazient"/>
+            </designation>
+            <designation>
+               <language value="en-US"/>
+               <value value="Advance directives"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="722160009"/>
+            <display value="Audit trail report (record artifact)"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="Rückverfolgung der EPD Zugriffe"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="traçabilité des accès aux DEP"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="calloutronologia degli accessi alla CIP"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="repersequitabladad da l'access al DEP"/>
+            </designation>
+            <designation>
+               <language value="en-US"/>
+               <value value="Record access"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="722216001"/>
+            <display value="Emergency medical identification record (record artifact)"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="Notfallkarte"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="carte d'urgence"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="tessera di emergenza"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="attest d'urgenza"/>
+            </designation>
+            <designation>
+               <language value="en-US"/>
+               <value value="Emergency ID card"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="772790007"/>
+            <display value="Organ donor card (record artifact)"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="Organspendeausweis"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="carte de donneur d'organes"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="tessera di donatore di organi"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="attest da donatur d'organs"/>
+            </designation>
+            <designation>
+               <language value="en-US"/>
+               <value value="Organ donor card"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="405624007"/>
+            <display value="Administrative documentation (record artifact)"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="Administratives Dokument"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="document administratif"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="documento amministrativo"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="document administrativ"/>
+            </designation>
+            <designation>
+               <language value="en-US"/>
+               <value value="Administrative document"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="417319006"/>
+            <display value="Record of health event (record artifact)"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="Dokument zu gesundheitsrelevantem Ereignis"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="document sur l'événement sanitaire"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="documento concernente un evento rilevante per la salute"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="document concernent  in eveniment relevant per la sanadad"/>
+            </designation>
+            <designation>
+               <language value="en-US"/>
+               <value value="Event report"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="419891008"/>
+            <display value="Record artifact (record artifact)"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="Sonstige Dokumentation"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="autre documentation"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="altra documentazione"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="document betg designà pli precis"/>
+            </designation>
+            <designation>
+               <language value="en-US"/>
+               <value value="Other documentation"/>
+            </designation>
+         </concept>
+      </include>
+   </compose>
+</ValueSet>
